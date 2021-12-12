@@ -1,8 +1,8 @@
 
-const { Schema, model, model } = require('mongoose');
+const { Schema, model } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
-const ReactionsSchema = new Scehma({
+const ReactionsSchema = new Schema({
 
     reactionsId: {
         type: Schema.Types.ObjectId,

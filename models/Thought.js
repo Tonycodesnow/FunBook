@@ -1,7 +1,7 @@
 const { Schema, model } = require('mongoose');
 const reactionsSchema = require('./Reactions');
 
-const ThoughtSchema = new Scehma({
+const ThoughtSchema = new Schema({
     writtenBy: {
         type: String,
         required: true,
@@ -24,7 +24,7 @@ const ThoughtSchema = new Scehma({
         required: 'username is required',
     },
 
-    reactions: [reactionsSchema],
+    // reaction: [reactionsSchema],
 
     },
     {

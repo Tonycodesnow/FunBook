@@ -4,23 +4,16 @@ const thoughtController = {
 
     // GET /thoughts
     getAllThoughts: (req, res) => {
-            Thought.find({}, (err, users) => {
-                if (err) {
-                    res.send(err);
-                }
-                res.json(users);
-            });
+            Thought.find()
+            .then(thoughts =>
+                res.json(thoughts)).catch(err => console.log(err))       
         },
 
             // get thought by id
     getThoughtsById: (req, res) => {
-        Thoughts.findOne({ _id: req.params.id }, (err, user) => {
-            if (err) {
-                res.send(err);
-            }
-            res.json(user);
-        }
-      );
+        Thought.findOne({ _id: req.params.id })
+        .then(thoughts =>
+            res.json(thoughts)).catch(err => console.log(err))      
     },
 
     // add a thought to a post

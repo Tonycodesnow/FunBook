@@ -1,4 +1,4 @@
-const { User } = require('../models/user');
+const { User } = require('../models/User');
 
 const allUsersController = {
     // get all users
@@ -27,7 +27,6 @@ const allUsersController = {
           .catch((err) => res.status(400).json(err));
       },
 
-
     // update user
     updateUser({ params, body }, res) {
         User.findOneAndUpdate({ _id: params.id }, body, { new: true })
@@ -41,7 +40,6 @@ const allUsersController = {
           .catch((err) => res.status(400).json(err));
     },
 
-
     // delete user
     deleteUser: (req, res) => {
         User.remove({ _id: req.params.id }, (err, user) => {
@@ -49,6 +47,21 @@ const allUsersController = {
                 res.send(err);
             }
             res.json({ message: 'User deleted' });
+        });
+    },
+
+    addFriend: ({ params, body }, res) => {
+        console.log(params, body)
+        // User.create()
+    },
+
+
+    deleteFriend: (req, res) => {
+        User.remove({ _id: req.params.id }, (err, user) => {
+            if (err) {
+                res.send(err);
+            }
+            res.json({ message: 'Friend deleted' });
         });
     },
 };
