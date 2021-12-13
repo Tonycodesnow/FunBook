@@ -1,4 +1,4 @@
-const { User } = require('../models/User');
+const { User } = require('../models');
 
 const allUsersController = {
     // get all users
@@ -21,8 +21,9 @@ const allUsersController = {
       );
     },
     // create user 
-    createUser({ body }, res) {
-        User.create(body)
+    createUser(req, res) {
+        console.log(req.body)
+        User.create(req.body)
           .then((user) => res.json(user))
           .catch((err) => res.status(400).json(err));
       },
@@ -42,6 +43,7 @@ const allUsersController = {
 
     // delete user
     deleteUser: (req, res) => {
+        console.log(err, user)
         User.remove({ _id: req.params.id }, (err, user) => {
             if (err) {
                 res.send(err);

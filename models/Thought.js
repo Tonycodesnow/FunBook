@@ -24,7 +24,8 @@ const ThoughtSchema = new Schema({
         required: 'username is required',
     },
 
-    // reaction: [reactionsSchema],
+
+   // Reactions: [reactionsSchema],
 
     },
     {
@@ -36,7 +37,7 @@ const ThoughtSchema = new Schema({
 });
 
 ThoughtSchema.virtual('reactionCount').get(function () {
-    return this.reactions.length;
+    return this.Reactions.length;
 });
 
 const Thought = model('thought', ThoughtSchema);

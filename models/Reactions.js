@@ -38,6 +38,6 @@ ReactionsSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
 });
 
-const Reaction = model('Reactions', ReactionsSchema);
+const Reactions = model('Reactions', ReactionsSchema);
 
-module.exports = Reaction;
+module.exports = Reactions;
