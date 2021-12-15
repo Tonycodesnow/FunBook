@@ -39,7 +39,6 @@ npm run seed
 When you're ready to run the application, from the root folder, type the below into your command line to start the server:
 ```
 npm start
-```
 <br />
 
 ## Screenshots
@@ -47,6 +46,7 @@ npm start
 screenshot in insomia
 
 <p align="center"><img src="" width="45%"></p> <br />
+
 ## Demos
 
 Click on the link below for a video demonstration of the application and the generated API routes:
