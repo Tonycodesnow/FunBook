@@ -15,14 +15,16 @@
 - [Questions](#questions)
 
 <br />
-<br />
 
 ## Description
 
 API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. You’ll use Express.js for routing, a MongoDB database, and the Mongoose ODM.<br />
 
 ## Installation
-To install all the dependencies, use the command below:
+
+Clone the repository from GitHub:
+```
+git clone git@github.com:Tonycodesnow/FunBook.git
 ```
 Then, inside the folder, run the following command:
 ```
@@ -39,19 +41,20 @@ npm run seed
 When you're ready to run the application, from the root folder, type the below into your command line to start the server:
 ```
 npm start
+```
 <br />
 
 ## Screenshots
 
 screenshot in insomia
 
-<p align="center"><img src="" width="45%"></p> <br />
+<p align="center"><img src="./assets/images/Thoughts.png" width="60%"></p> <br />
 
 ## Demos
 
 Click on the link below for a video demonstration of the application and the generated API routes:
 
-https://www.youtube.com/watch?v=2_dT2A-LKOg
+https://watch.screencastify.com/v/Msr4QmhhK6oCwOCT5WZa
 
 
 ## Github application link
@@ -67,7 +70,6 @@ JavaScript, Node, Inquirer, MongoDB database, Mongoose and Express.js API. <br /
 
 This project is licensed under the MIT license. <br />
   
-<br />
 
 ## Questions?
 
